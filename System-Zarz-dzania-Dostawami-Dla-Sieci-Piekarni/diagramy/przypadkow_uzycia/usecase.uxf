@@ -43,7 +43,7 @@ Punktu</panel_attributes>
       <w>84</w>
       <h>56</h>
     </coordinates>
-    <panel_attributes>Złożenie
+    <panel_attributes>Zlozenie
 zapotrzebowania
 na towar</panel_attributes>
     <additional_attributes/>
@@ -56,7 +56,7 @@ na towar</panel_attributes>
       <w>119</w>
       <h>63</h>
     </coordinates>
-    <panel_attributes>Zgłoszenie zwrotów
+    <panel_attributes>Zgloszenie zwrotow
 niesprzedanego
 pieczywa</panel_attributes>
     <additional_attributes/>
@@ -64,7 +64,7 @@ pieczywa</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>273</x>
+      <x>266</x>
       <y>273</y>
       <w>98</w>
       <h>49</h>
@@ -95,7 +95,7 @@ rzeczywistym</panel_attributes>
       <w>105</w>
       <h>49</h>
     </coordinates>
-    <panel_attributes>Wyświetlanie
+    <panel_attributes>Wyswietlanie
 listy przystanków
 na trasie</panel_attributes>
     <additional_attributes/>
@@ -208,11 +208,11 @@ stanów magazynowych</panel_attributes>
     <coordinates>
       <x>77</x>
       <y>287</y>
-      <w>210</w>
+      <w>203</w>
       <h>105</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;130.0;280.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;270.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -257,20 +257,20 @@ stanów magazynowych</panel_attributes>
       <h>63</h>
     </coordinates>
     <panel_attributes>Zgłoszenie
-błędu/opóźnienia</panel_attributes>
+bledu/opoznienia</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
+      <x>315</x>
       <y>315</y>
       <w>84</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;50.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;60.0;80.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
@@ -303,8 +303,8 @@ załadunku</panel_attributes>
       <w>105</w>
       <h>49</h>
     </coordinates>
-    <panel_attributes>Korekta ilościowa
-produktów</panel_attributes>
+    <panel_attributes>Korekta ilosciowa
+produktow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -339,7 +339,7 @@ produktów</panel_attributes>
       <h>56</h>
     </coordinates>
     <panel_attributes>Rejestracja
-odbioru zwrotów</panel_attributes>
+odbioru zwrotow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -361,7 +361,7 @@ odbioru zwrotów</panel_attributes>
       <w>119</w>
       <h>56</h>
     </coordinates>
-    <panel_attributes>Analiza sprzedaży
+    <panel_attributes>Analiza sprzedazy
 i zarządzanie
 odpadami</panel_attributes>
     <additional_attributes/>
@@ -397,7 +397,7 @@ odpadami</panel_attributes>
       <w>126</w>
       <h>56</h>
     </coordinates>
-    <panel_attributes>Weryfikacja uprawnień
+    <panel_attributes>Weryfikacja uprawnien
 administracyjnych</panel_attributes>
     <additional_attributes/>
   </element>
