@@ -1,3 +1,29 @@
+Opisy tekstowe wszystkich aktorów:
+
+1. Pracownik Punktu (Aktor Biznesowy)
+
+        Charakterystyka: Użytkownik operacyjny odpowiedzialny za punkt sprzedaży.
+    
+        Główne zadania: Inicjuje procesy logistyki „push” (zgłaszanie zwrotów) oraz „pull” (zapotrzebowanie na towar).
+    
+        Odpowiedzialność: Zapewnienie ciągłości sprzedażowej poprzez precyzyjne określenie potrzeb asortymentowych oraz rzetelne rozliczanie zwrotów.
+
+2. Kierowca (Aktor Operacyjny)
+
+        Charakterystyka: Użytkownik mobilny realizujący fizyczny obieg towaru.
+    
+        Główne zadania: Walidacja stanów fizycznych ze stanem systemowym podczas odbioru zwrotów oraz dostarczanie danych telemetrycznych (lokalizacja/status).
+    
+        Odpowiedzialność: Zgodność fizyczna odebranego towaru oraz informowanie systemu o postępach na trasie.
+
+3. Dyspozytor (Aktor Nadzorczy)
+
+        Charakterystyka: Użytkownik szczebla koordynacyjnego.
+    
+        Główne zadania: Monitoring procesów w czasie rzeczywistym, analiza odchyleń (opóźnienia) oraz odbiór danych zagregowanych do celów produkcyjnych.
+    
+        Odpowiedzialność: Optymalizacja logistyki i nadzór nad terminowością realizacji do
+
 1. Opis przypadku użycia: „Złożenie zapotrzebowania na towar”
 
 1.1. Uczestniczący aktorzy
