@@ -24,6 +24,7 @@ Opisy tekstowe wszystkich aktorów:
     
         Odpowiedzialność: Optymalizacja logistyki i nadzór nad terminowością realizacji do
 
+
 1. Opis przypadku użycia: „Złożenie zapotrzebowania na towar”
 
 1.1. Uczestniczący aktorzy
