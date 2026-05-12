@@ -1,39 +1,83 @@
-Dostawa
+Alfabetyczny wykaz wszystkich klas:
 
-    Opis: Reprezentuje fizyczny proces transportu pieczywa do punktu.
+Order (Zapotrzebowanie)
 
-    Atrybuty: godzinaDostawy (planowana godzina przyjazdu).
+    Opis: Encja przechowująca nagłówek zamówienia złożonego przez dany punkt sprzedaży.
 
-    Metody: potwierdzOdbior() (elektroniczne zatwierdzenie dostawy przez kierowcę).
+    Atrybuty: id (klucz główny), createdAt (data złożenia), status (stan zamówienia: NEW, CONFIRMED, itd.).
 
-Magazyn
+    Metody:
 
-    Opis: Przechowuje informacje o aktualnym stanie produktów w piekarni.
+        totalPrice(): oblicza łączną wartość całego zamówienia.
 
-    Atrybuty: stanAktualny (ilość sztuk na stanie).
+        validateOrderTime(): weryfikuje, czy zamówienie zostało złożone przed godziną graniczną (np. 22:00).
 
-    Metody: aktualizujStan() (zdejmuje towar po złożeniu zapotrzebowania).
+OrderItem (Pozycja zamówienia)
 
-Produkt
+    Opis: Klasa szczegółowa łącząca konkretny produkt z ilością w ramach danego zamówienia.
 
-    Opis: Obiekt handlowy będący przedmiotem zamówień i zwrotów.
+    Atrybuty: id, product (referencja do produktu), quantity (zamówiona ilość).
 
-    Atrybuty: gramatura (waga pieczywa), sklad.
+    Metody:
 
-    Metody: sprawdzDostepnosc() (weryfikuje czy produkt można zamówić).
+        calculateSubtotal(): oblicza wartość danej pozycji (cena produktu x ilość).
 
-Trasa
+PointOfSale (Punkt Sprzedaży)
 
-    Opis: Zbiór punktów sprzedaży uszeregowanych w kolejności dostaw.
+    Opis: Reprezentuje fizyczny sklep lub piekarnię firmową, która generuje popyt i zatrudnia personel.
 
-    Atrybuty: listaPrzystankow (kolejność sklepów).
+    Atrybuty: id, name (nazwa punktu), address (lokalizacja dostawy), phone (kontakt).
 
-    Metody: obliczKilometry() (wyliczanie dystansu dla logistyki).
+    Metody:
 
-Zwrot
+        generateDailyReport(): tworzy zestawienie sprzedaży dla danego punktu.
 
-    Opis: Dokumentacja niesprzedanego pieczywa wracającego do piekarni.
+        getStaffList(): zwraca listę użytkowników przypisanych do tego punktu.
 
-    Atrybuty: powodZwrotu, iloscSztuk.
+Product (Produkt)
 
-    Metody: zatwierdzZwrot() (finalizacja procesu przez kierowcę).
+    Opis: Definicja towaru (pieczywa) dostępnego w ofercie wraz z aktualnym stanem magazynowym po produkcji.
+
+    Atrybuty: id, name, weight (gramatura), price (cena jednostkowa), stockQuantity (dostępna ilość).
+
+    Metody:
+
+        reduceStock(amount): zmniejsza stan po wydaniu towaru do dostawy.
+
+        addStock(amount): zwiększa stan po nocnej produkcji.
+
+Route (Trasa)
+
+    Opis: Harmonogram logistyczny grupujący zamówienia do zrealizowania przez konkretnego kierowcę w danym dniu.
+
+    Atrybuty: id, driver (przypisany User), deliveryDate, orders (lista zamówień/przystanków).
+
+    Metody:
+
+        assignDriver(User): przypisuje kierowcę do trasy.
+
+        calculateRouteDistance(): oblicza dystans trasy w celu optymalizacji kosztów paliwa.
+
+User (Użytkownik)
+
+    Opis: Centralna klasa systemu autoryzacji, definiująca role i uprawnienia pracowników.
+
+    Atrybuty: id, username, password, role (Staff, Driver, Dispatcher).
+
+    Metody:
+
+        login(): proces uwierzytelniania.
+
+        changePassword(): zarządzanie bezpieczeństwem konta.
+
+        hasRole(role): weryfikacja uprawnień do konkretnych modułów systemu.
+
+WasteLog (Rejestr Odpadów)
+
+    Opis: Dokumentuje zwroty niesprzedanego pieczywa i zarządza procesem ich specjalnej utylizacji.
+
+    Atrybuty: id, product, quantity, disposalDate, category (typ utylizacji).
+
+    Metody:
+
+        generateWasteReport(): generuje raport strat i metod utylizacji dla celów analitycznych i ekologicznych.
