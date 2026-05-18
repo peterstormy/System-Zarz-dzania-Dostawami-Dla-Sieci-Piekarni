@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+
+  <!-- ============================================================ -->
+  <!-- Title                                                          -->
+  <!-- ============================================================ -->
+  <element>
+    <id>UMLNote</id>
+    <coordinates><x>540</x><y>10</y><w>420</w><h>40</h></coordinates>
+    <panel_attributes>*/Zamówienie (Order) – cykl życia/*
+bg=white
+fontsize=18
+halign=center
+valign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- ============================================================ -->
+  <!-- Outer frame                                                    -->
+  <!-- ============================================================ -->
+  <element>
+    <id>UMLFrame</id>
+    <coordinates><x>40</x><y>60</y><w>1430</w><h>930</h></coordinates>
+    <panel_attributes>Antykwariat: zamówienie</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- ============================================================ -->
+  <!-- Nodes                                                          -->
+  <!-- ============================================================ -->
+
+  <!-- Initial state -->
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates><x>90</x><y>180</y><w>30</w><h>30</h></coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- nowe -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>180</x><y>165</y><w>130</w><h>60</h></coordinates>
+    <panel_attributes>nowe</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- weryfikowane -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>460</x><y>165</y><w>150</w><h>60</h></coordinates>
+    <panel_attributes>weryfikowane</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- potwierdzone -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>780</x><y>165</y><w>150</w><h>60</h></coordinates>
+    <panel_attributes>potwierdzone</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- anulowane (LEFT, from nowe) -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>180</x><y>340</y><w>130</w><h>60</h></coordinates>
+    <panel_attributes>anulowane</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- final-L (after anulowane-L) -->
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates><x>230</x><y>460</y><w>30</w><h>30</h></coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- Guard note (drzucenie ...) -->
+  <element>
+    <id>UMLNote</id>
+    <coordinates><x>340</x><y>290</y><w>240</w><h>115</h></coordinates>
+    <panel_attributes>drzucenie [
+   godzina &gt; 22:00
+   lub ilość chleba &gt; 40
+   lub ilość chleba mod 5 != 0
+   lub brak dostępności produktów ]
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- odrzucone -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>460</x><y>530</y><w>150</w><h>60</h></coordinates>
+    <panel_attributes>odrzucone</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- final after odrzucone -->
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates><x>520</x><y>700</y><w>30</w><h>30</h></coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- kompletowane -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>780</x><y>340</y><w>150</w><h>60</h></coordinates>
+    <panel_attributes>kompletowane</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- w trasie -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>780</x><y>510</y><w>150</w><h>60</h></coordinates>
+    <panel_attributes>w trasie</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- dostarczone -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>780</x><y>670</y><w>150</w><h>60</h></coordinates>
+    <panel_attributes>dostarczone</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- zrealizowane -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>780</x><y>830</y><w>150</w><h>60</h></coordinates>
+    <panel_attributes>zrealizowane</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- anulowane (RIGHT, from potwierdzone / kompletowane) -->
+  <element>
+    <id>UMLState</id>
+    <coordinates><x>1180</x><y>470</y><w>130</w><h>60</h></coordinates>
+    <panel_attributes>anulowane</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- final-R (after anulowane-R) -->
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates><x>1230</x><y>600</y><w>30</w><h>30</h></coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- final after zrealizowane -->
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates><x>1000</x><y>845</y><w>30</w><h>30</h></coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- ============================================================ -->
+  <!-- Transitions                                                    -->
+  <!-- ============================================================ -->
+
+  <!-- T1: initial -> nowe -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>115</x><y>185</y><w>75</w><h>20</h></coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>5;10;65;10</additional_attributes>
+  </element>
+
+  <!-- T2: nowe -> anulowane-L  (anuluj()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>235</x><y>220</y><w>120</w><h>130</h></coordinates>
+    <panel_attributes>lt=-&gt;
+anuluj()</panel_attributes>
+    <additional_attributes>15;5;15;125</additional_attributes>
+  </element>
+
+  <!-- T3: anulowane-L -> final-L -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>235</x><y>395</y><w>30</w><h>75</h></coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;5;15;70</additional_attributes>
+  </element>
+
+  <!-- T4: nowe -> weryfikowane  (submitOrder()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>305</x><y>180</y><w>165</w><h>40</h></coordinates>
+    <panel_attributes>lt=-&gt;
+submitOrder()</panel_attributes>
+    <additional_attributes>5;15;155;15</additional_attributes>
+  </element>
+
+  <!-- T5: weryfikowane -> odrzucone -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>525</x><y>220</y><w>30</w><h>320</h></coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;5;15;315</additional_attributes>
+  </element>
+
+  <!-- T6: odrzucone -> final  (powiadomienie()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>525</x><y>585</y><w>140</w><h>125</h></coordinates>
+    <panel_attributes>lt=-&gt;
+powiadomienie()</panel_attributes>
+    <additional_attributes>15;5;15;120</additional_attributes>
+  </element>
+
+  <!-- T7: weryfikowane -> potwierdzone  (poprawne dane) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>605</x><y>180</y><w>185</w><h>40</h></coordinates>
+    <panel_attributes>lt=-&gt;
+poprawne dane</panel_attributes>
+    <additional_attributes>5;15;175;15</additional_attributes>
+  </element>
+
+  <!-- T8: potwierdzone -> kompletowane  (startPicking()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>845</x><y>220</y><w>160</w><h>130</h></coordinates>
+    <panel_attributes>lt=-&gt;
+startPicking()</panel_attributes>
+    <additional_attributes>15;5;15;125</additional_attributes>
+  </element>
+
+  <!-- T9: potwierdzone -> anulowane-R  (anuluj()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>920</x><y>185</y><w>305</w><h>295</h></coordinates>
+    <panel_attributes>lt=-&gt;
+anuluj()</panel_attributes>
+    <additional_attributes>10;15;295;285</additional_attributes>
+  </element>
+
+  <!-- T10: kompletowane -> w trasie  (assignRoute()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>845</x><y>395</y><w>160</w><h>125</h></coordinates>
+    <panel_attributes>lt=-&gt;
+assignRoute()</panel_attributes>
+    <additional_attributes>15;5;15;120</additional_attributes>
+  </element>
+
+  <!-- T11: kompletowane -> anulowane-R  (anuluj()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>920</x><y>360</y><w>275</w><h>150</h></coordinates>
+    <panel_attributes>lt=-&gt;
+anuluj()</panel_attributes>
+    <additional_attributes>10;10;265;140</additional_attributes>
+  </element>
+
+  <!-- T12: anulowane-R -> final-R -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>1235</x><y>525</y><w>30</w><h>85</h></coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;5;15;80</additional_attributes>
+  </element>
+
+  <!-- T13: w trasie -> dostarczone  (confirmDelivery()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>845</x><y>565</y><w>170</w><h>115</h></coordinates>
+    <panel_attributes>lt=-&gt;
+confirmDelivery()</panel_attributes>
+    <additional_attributes>15;5;15;110</additional_attributes>
+  </element>
+
+  <!-- T14: dostarczone -> zrealizowane  (closeOrder()) -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>845</x><y>725</y><w>160</w><h>115</h></coordinates>
+    <panel_attributes>lt=-&gt;
+closeOrder()</panel_attributes>
+    <additional_attributes>15;5;15;110</additional_attributes>
+  </element>
+
+  <!-- T15: zrealizowane -> final -->
+  <element>
+    <id>Relation</id>
+    <coordinates><x>925</x><y>850</y><w>90</w><h>30</h></coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>5;10;80;10</additional_attributes>
+  </element>
+
+</diagram>
