@@ -1,0 +1,27 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLNote</id><coordinates><x>333</x><y>0</y><w>540</w><h>36</h></coordinates><panel_attributes>*/Diagram stanu - rejestr odpadów/*
+bg=white
+fontsize=18
+halign=center
+valign=center</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>45</y><w>1197</w><h>855</h></coordinates><panel_attributes>Obiekt: Odpady</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>126</x><y>153</y><w>27</w><h>27</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>252</x><y>135</y><w>189</w><h>72</h></coordinates><panel_attributes>*zgłoszony*
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>576</x><y>135</y><w>180</w><h>72</h></coordinates><panel_attributes>*zweryfikowany*
+(zgłoszenie
+zweryfikowane)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>936</x><y>126</y><w>198</w><h>99</h></coordinates><panel_attributes>*zakwalifikowany*
+*do utylizacji*
+(metoda utylizacji
+określona)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>90</x><y>450</y><w>189</w><h>72</h></coordinates><panel_attributes>*odrzucony*
+(zgłoszenie odrzucone)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>936</x><y>441</y><w>198</w><h>99</h></coordinates><panel_attributes>*zutylizowany*
+(produkty przekazane
+do utylizacji)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>936</x><y>702</y><w>198</w><h>72</h></coordinates><panel_attributes>*zarchiwizowany*
+(wpis zarchiwizowany)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>162</x><y>630</y><w>27</w><h>27</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>1017</x><y>846</y><w>27</w><h>27</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>153</y><w>126</w><h>27</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>15;15;125;15</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>153</y><w>162</w><h>45</h></coordinates><panel_attributes>lt=-&gt;
+verifyWaste()
+[poprawne dane]</panel_attributes><additional_attributes>15;20;165;20</additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>189</y><w>207</w><h>270</h></coordinates><panel_attributes>lt=-&gt;
+rejectLog()
+[błędne dane /
+niepoprawna ilość /
+duplikat]</panel_attributes><additional_attributes>190;15;15;285</additional_attributes></element><element><id>Relation</id><coordinates><x>738</x><y>153</y><w>207</w><h>45</h></coordinates><panel_attributes>lt=-&gt;
+approveDisposal()
+[zatwierdzenie utylizacji]</panel_attributes><additional_attributes>15;20;215;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1026</x><y>207</y><w>153</w><h>243</h></coordinates><panel_attributes>lt=-&gt;
+disposeProducts()
+[przekazanie do utylizacji]</panel_attributes><additional_attributes>10;15;10;250</additional_attributes></element><element><id>Relation</id><coordinates><x>1026</x><y>522</y><w>126</w><h>189</h></coordinates><panel_attributes>lt=-&gt;
+archiveLog()
+[archiwizacja wpisu]</panel_attributes><additional_attributes>10;15;10;195</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>504</y><w>27</w><h>144</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>15;15;15;140</additional_attributes></element><element><id>Relation</id><coordinates><x>1017</x><y>756</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>15;15;15;95</additional_attributes></element></diagram>
