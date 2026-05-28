@@ -4,30 +4,19 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>40</x>
-      <y>0</y>
-      <w>140</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>_Pracownik_</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>240</x>
-      <y>0</y>
+      <x>200</x>
+      <y>100</y>
       <w>180</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>_:PunktSprzedaży_</panel_attributes>
+    <panel_attributes>_:PunktSprzedazy_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>480</x>
-      <y>0</y>
+      <x>440</x>
+      <y>140</y>
       <w>180</w>
       <h>30</h>
     </coordinates>
@@ -37,19 +26,19 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>680</x>
-      <y>0</y>
+      <x>640</x>
+      <y>390</y>
       <w>180</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>_:PozycjaZamówienia_</panel_attributes>
+    <panel_attributes>_:PozycjaZamowienia_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>960</x>
-      <y>0</y>
+      <x>920</x>
+      <y>390</y>
       <w>120</w>
       <h>30</h>
     </coordinates>
@@ -59,19 +48,19 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>100</x>
-      <y>20</y>
+      <x>50</x>
+      <y>160</y>
       <w>30</w>
-      <h>50</h>
+      <h>740</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;720.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>20</y>
+      <x>280</x>
+      <y>120</y>
       <w>30</w>
       <h>70</h>
     </coordinates>
@@ -81,74 +70,41 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>20</y>
+      <x>520</x>
+      <y>160</y>
       <w>30</w>
-      <h>110</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>20</y>
+      <x>720</x>
+      <y>410</y>
       <w>30</w>
-      <h>380</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;360.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1010</x>
-      <y>20</y>
+      <x>970</x>
+      <y>410</y>
       <w>30</w>
-      <h>440</h>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>100</x>
-      <y>50</y>
-      <w>20</w>
-      <h>740</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>320</x>
-      <y>70</y>
-      <w>20</w>
-      <h>720</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>560</x>
-      <y>110</y>
-      <w>20</w>
-      <h>630</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>760</x>
-      <y>380</y>
+      <x>720</x>
+      <y>480</y>
       <w>20</w>
       <h>230</h>
     </coordinates>
@@ -156,33 +112,22 @@
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1010</x>
-      <y>440</y>
-      <w>20</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>110</x>
-      <y>50</y>
-      <w>230</w>
+      <x>50</x>
+      <y>150</y>
+      <w>250</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-złóżZamówienie(produkty)</panel_attributes>
-    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+zlozZamowienie(produkty)</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>90</y>
+      <x>290</x>
+      <y>190</y>
       <w>250</w>
       <h>40</h>
     </coordinates>
@@ -193,25 +138,25 @@ złóżZamówienie(produkty)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>120</y>
+      <x>530</x>
+      <y>220</y>
       <w>250</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-weryfikujCzasZamówienia()</panel_attributes>
+weryfikujCzasZamowienia()</panel_attributes>
     <additional_attributes>10.0;50.0;50.0;50.0;50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>130</x>
-      <y>180</y>
-      <w>980</w>
+      <x>90</x>
+      <y>280</y>
+      <w>490</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>halign=left
-alt [przed godziną graniczną]
+alt [przed godzina graniczna]
 --
 
 
@@ -223,48 +168,48 @@ alt [przed godziną graniczną]
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>200</y>
+      <x>290</x>
+      <y>300</y>
       <w>250</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-zamówienie przyjęte</panel_attributes>
+zamowienie przyjete</panel_attributes>
     <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>260</y>
+      <x>290</x>
+      <y>360</y>
       <w>250</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-błąd: za późno na zamówienie</panel_attributes>
+blad: za pozno na zamowienie</panel_attributes>
     <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>110</x>
-      <y>280</y>
-      <w>230</w>
+      <x>50</x>
+      <y>380</y>
+      <w>250</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-odmowa zamówienia</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+odmowa zamowienia</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>130</x>
-      <y>330</y>
-      <w>980</w>
+      <x>90</x>
+      <y>430</y>
+      <w>960</w>
       <h>330</h>
     </coordinates>
-    <panel_attributes>loop [dla każdego produktu w zamówieniu]
+    <panel_attributes>loop [dla kazdego produktu w zamowieniu]
 --
 </panel_attributes>
     <additional_attributes/>
@@ -272,54 +217,54 @@ odmowa zamówienia</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>360</y>
+      <x>510</x>
+      <y>460</y>
       <w>250</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-PozycjaZamówienia(produkt, ilość)
+PozycjaZamowienia(produkt, ilosc)
 «create» </panel_attributes>
     <additional_attributes>210.0;20.0;30.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>410</y>
+      <x>730</x>
+      <y>510</y>
       <w>260</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-zmniejszStanMagazynu(ilość)</panel_attributes>
+zmniejszStanMagazynu(ilosc)</panel_attributes>
     <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>150</x>
-      <y>450</y>
-      <w>940</w>
+      <x>300</x>
+      <y>550</y>
+      <w>750</w>
       <h>195</h>
     </coordinates>
     <panel_attributes>halign=left
 layer=1
-alt [stanMagazynowy &gt;= ilość]
+alt [stanMagazynowy &gt;= ilosc]
 --
 
 
 
 
 -.
-[stanMagazynowy &lt; ilość]
+[stanMagazynowy &lt; ilosc]
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>510</y>
+      <x>730</x>
+      <y>610</y>
       <w>260</w>
       <h>40</h>
     </coordinates>
@@ -330,32 +275,32 @@ stan zaktualizowany</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>490</y>
+      <x>530</x>
+      <y>600</y>
       <w>210</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-obliczWartośćPozycji()</panel_attributes>
+obliczWartoscPozycji()</panel_attributes>
     <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>550</y>
-      <w>270</w>
+      <x>730</x>
+      <y>650</y>
+      <w>260</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-błąd: brak w magazynie</panel_attributes>
-    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+blad: brak w magazynie</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>560</y>
+      <x>530</x>
+      <y>660</y>
       <w>210</w>
       <h>50</h>
     </coordinates>
@@ -367,55 +312,55 @@ pozycja odrzucona
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>670</y>
-      <w>190</w>
+      <x>530</x>
+      <y>770</y>
+      <w>180</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-łącznaWartość()</panel_attributes>
+lacznaWartosc()</panel_attributes>
     <additional_attributes>10.0;50.0;60.0;50.0;60.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>720</y>
+      <x>290</x>
+      <y>820</y>
       <w>250</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-zamówienie: Zapotrzebowanie</panel_attributes>
+zamowienie: Zapotrzebowanie</panel_attributes>
     <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>110</x>
-      <y>760</y>
-      <w>230</w>
+      <x>60</x>
+      <y>860</y>
+      <w>240</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-potwierdzenie złożenia</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+potwierdzenie zlozenia</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1010</x>
-      <y>520</y>
+      <x>520</x>
+      <y>480</y>
       <w>30</w>
-      <h>290</h>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;270.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>600</y>
+      <x>720</x>
+      <y>700</y>
       <w>30</w>
       <h>50</h>
     </coordinates>
@@ -423,21 +368,10 @@ potwierdzenie złożenia</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>560</x>
-      <y>730</y>
-      <w>30</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>760</x>
-      <y>620</y>
+      <x>720</x>
+      <y>720</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -447,13 +381,112 @@ potwierdzenie złożenia</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>590</y>
+      <x>530</x>
+      <y>690</y>
       <w>210</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 &lt;&lt;destroy&gt;&gt;</panel_attributes>
     <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>20</x>
+      <y>60</y>
+      <w>80</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Pracownik</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>50</x>
+      <y>160</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>50</x>
+      <y>870</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>280</x>
+      <y>170</y>
+      <w>20</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>280</x>
+      <y>840</y>
+      <w>20</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>400</y>
+      <w>30</w>
+      <h>460</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;440.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>520</x>
+      <y>210</y>
+      <w>20</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>520</x>
+      <y>620</y>
+      <w>20</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>970</x>
+      <y>520</y>
+      <w>20</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
   </element>
 </diagram>
