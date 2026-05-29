@@ -54,7 +54,7 @@
 -product: Product
 -quantity: Integer
 --
-</panel_attributes>
++calculateSubtotal()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
