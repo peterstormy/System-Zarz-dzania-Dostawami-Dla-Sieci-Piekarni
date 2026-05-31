@@ -16,7 +16,7 @@ data przekazania oraz wyniki sprawdzianów (SP).
 
 | # | Sekcja | Status |
 |---|--------|--------|
-| 0 | Metryczka, skład zespołu, proponowana punktacja | 🟡 Brak prowadzącego, daty i punktów SP |
+| 0 | Metryczka, skład zespołu, proponowana punktacja | ✅ Gotowe |
 | 1 | Treść zadania projektowego | ✅ Gotowe |
 | 2 | Cel systemu, zakres, korzyści | ✅ Gotowe |
 | 3 | Słownik pojęć | ✅ Gotowe |
