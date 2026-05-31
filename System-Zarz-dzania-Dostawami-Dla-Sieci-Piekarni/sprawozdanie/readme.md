@@ -7,10 +7,6 @@ realizowanego w ramach przedmiotu **Inżynieria Oprogramowania**, Politechnika B
 
 👉 https://docs.google.com/document/d/13lfYRmG93S8xuxdnlZSA0stiRm2dmSwACCJ6rlLdsdM/edit?usp=sharing
 
-## ℹ️ Informacje o dokumencie
-
-Dokument jest **w trakcie finalizacji** — pozostały do uzupełnienia jedynie dane prowadzącego,
-data przekazania oraz wyniki sprawdzianów (SP).
 
 ## 📋 Zawartość sprawozdania
 
